@@ -1,0 +1,44 @@
+.materials_wrap {
+	display: flex;
+	justify-content: center;
+	column-gap: 25px;
+	padding: 0px 15px 100px 15px;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+	column-gap: 50px;
+}
+
+.left_side {
+	width: 500px;
+	padding: 0px 10px;
+}
+
+.descr {
+	margin: 20px 0px;
+	text-align: left;
+	font-size: var(--fs-md);
+	font-weight: var(--fw-light);
+}
+
+.list_wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.item {
+	list-style-type: square;
+}
+
+.colors {
+	height: 325px;
+	width: auto;
+}
+
+.text {
+	font-size: 14px;
+	text-align: left;
+	letter-spacing: 0.5px;
+}

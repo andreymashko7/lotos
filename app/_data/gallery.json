@@ -1,0 +1,51 @@
+{
+	"home": [
+		{
+			"photo": "/detskaya.jpg",
+			"alt": "detskaya ",
+			"descr": "Детские"
+		},
+		{
+			"photo": "/kitchen.jpg",
+			"alt": "kitchen",
+			"descr": "Кухни"
+		},
+		{
+			"photo": "/gostinnaya.jpg",
+			"alt": "gostinnaya",
+			"descr": "Мебель для гостинной"
+		},
+		{
+			"photo": "/shkafy.jpg",
+			"alt": "shkafy",
+			"descr": "Шкафы-купе"
+		},
+		{
+			"photo": "/spalnya.jpg",
+			"alt": "Мебель для спальни",
+			"descr": "Мебель для спальни"
+		}
+	],
+	"commercial": [
+		{
+			"photo": "/ofisnaya.jpg",
+			"alt": "Мебель для офиса",
+			"descr": "Мебель для офиса"
+		},
+		{
+			"photo": "/reception.jpg",
+			"alt": "Ресепшн",
+			"descr": "Ресепшн"
+		},
+		{
+			"photo": "/parikmaherskie.jpg",
+			"alt": "Мебель для салона",
+			"descr": "Мебель для салона"
+		},
+		{
+			"photo": "/chajnye.jpg",
+			"alt": "Мебель для кофе",
+			"descr": "Мебель для кофе"
+		}
+	]
+}

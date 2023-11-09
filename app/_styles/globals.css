@@ -1,0 +1,147 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	display: block;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+:root {
+	/* Typography */
+	--fs-sd: 14px;
+	--fs-md: 15px;
+	--fs-ld: 18px;
+
+	--fw-thin: 300;
+	--fw-light: 400;
+	--fw-normal: 500;
+	--fw-bold: 700;
+
+	/* Colors */
+	--colors-primary-text: #333333;
+	--colors-primary-white: #ffffff;
+	--colors-secondary-text: #2e2d2d;
+	--colors-links: #222222;
+
+	--colors-brand: #f5d45f;
+	/* #EEC42D */
+}
+
+body {
+	font-family: var(--font-open_sans), sans-serif;
+	font-size: var(--fs-md);
+	font-weight: var(--fw-light);
+	line-height: 20px;
+	color: var(--colors-primary-text);
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0px 30px;
+	margin: 0 auto;
+}
+
+/* Title */
+
+.title {
+	font-size: 35px;
+	line-height: 20px;
+	color: #2e2d2d;
+	font-family: var(--font-alegreya);
+}
+
+.titleWrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subTitle_italic {
+	margin-top: 10px;
+	margin-bottom: 60px;
+	font-family: var(--font-ubuntu);
+	color: hsla(0, 0%, 8%, 0.6);
+	font-size: 20px;
+	font-style: italic;
+}
+
+/*   -----  Yellow decor line    ------------ */
+
+.yellow_line {
+	display: inline-block;
+	width: 100px;
+	height: 2px;
+	margin-top: 15px;
+	background-image: linear-gradient(180deg, #eec42d, #eec42d);
+}

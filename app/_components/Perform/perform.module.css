@@ -1,0 +1,74 @@
+.perform {
+	padding-bottom: 100px;
+}
+
+.list {
+	margin-top: 50px;
+	display: flex;
+	column-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.item {
+	position: relative;
+	width: 180px;
+}
+
+.card_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box {
+	position: relative;
+	display: flex;
+	margin-bottom: 50px;
+	height: 100px;
+	width: 120px;
+	justify-content: center;
+	align-items: center;
+	background-color: #febf0b;
+}
+
+.box::before {
+	content: "";
+	position: absolute;
+	bottom: -48px;
+	left: 50%;
+	margin-left: -20px;
+	border: 20px solid transparent;
+	border-top: 30px solid #febf0b;
+}
+
+.item:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: -28px;
+
+	border: 15px solid transparent;
+	border-left: 15px solid #dbdbdb;
+}
+
+.subTitle {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.descr {
+	font-size: 14px;
+	padding: 0px 5px;
+	line-height: 18px;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.icon {
+	width: 45px;
+	height: 45px;
+	fill: #fff;
+}

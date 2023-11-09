@@ -1,0 +1,20 @@
+.gallery {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/* -----------------  Decor line    ----------------             */
+
+.decor_wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.decor_line {
+	display: inline-block;
+	margin: 55px 0px;
+	width: 585px;
+	height: 1px;
+	text-align: center;
+	background-image: linear-gradient(180deg, #2e2d2d, #2e2d2d);
+}

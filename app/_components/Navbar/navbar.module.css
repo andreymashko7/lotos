@@ -1,0 +1,111 @@
+.header_hero {
+}
+
+.logo {
+	font-size: 32px;
+	font-weight: var(--fw-bold);
+	font-family: var(--font-ubuntu);
+	color: var(--colors-brand);
+}
+
+.bg_wrap {
+	position: relative;
+	height: 100vh;
+}
+
+/* ---------        Header Links    ----------------*/
+
+.navLinks {
+	display: flex;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.nav_list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	color: var(--colors-links);
+	font-family: var(--font-ubuntu);
+}
+
+.nav_item {
+}
+
+.nav_item a {
+	display: block;
+	padding: 5px;
+	position: relative;
+	color: inherit;
+	font-size: 18px;
+	transition: 0.25s ease;
+}
+
+.nav_item a::before {
+	content: "";
+	background-color: var(--colors-brand);
+	position: absolute;
+	left: 0.8rem;
+	bottom: 6px;
+	width: 100%;
+	height: 6px;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav_item a:hover::before {
+	left: -5px;
+	bottom: 0;
+	height: 100%;
+	width: calc(100% + 10px);
+}
+
+.nav_item a:hover {
+	border-bottom: (--colors-links);
+}
+
+/* ------------      Title      ----------------------- */
+
+.titleWrap {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.title {
+	margin-bottom: 90px;
+	font-size: 65px;
+	line-height: 44px;
+	color: #151515;
+	font-family: var(--font-raleway);
+}
+
+.subTitle {
+	margin-bottom: 30px;
+	font-size: var(--fs-ld);
+	text-transform: uppercase;
+	font-family: var(--font-ubuntu);
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: var(--colors-secondary-text);
+}
+
+/* --------------- Button Modal ----------------------*/
+
+.hero_btn {
+	padding: 15px 40px;
+	border-radius: 2px;
+	/* background-image: -webkit-linear-gradient(270deg, #eec42d, #eec42d); */
+	background-image: linear-gradient(180deg, #eec42d, #eec42d);
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+	color: #2e2d2d;
+	font-size: var(--fs-md);
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+.hero_btn:hover {
+	background-image: linear-gradient(180deg, #f5d45f, #f5d45f);
+}

@@ -1,0 +1,43 @@
+.footer {
+	padding: 20px;
+	background-color: #eec42d;
+}
+
+.footer_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.contacts {
+	font-family: var(--font-ubuntu);
+	flex-direction: column;
+	display: flex;
+}
+
+.adress {
+	color: #fff;
+	font-family: var(--font-ubuntu);
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+/* ----------  SOCIAL_LINKS ----------- */
+
+.list {
+	display: flex;
+	gap: 25px;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	transition: all 0.3 ease-in;
+}
+
+.icon:hover {
+	color: rgb(112, 112, 219);
+}
