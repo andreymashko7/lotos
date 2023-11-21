@@ -12,6 +12,7 @@
 .item {
 	position: relative;
 	width: 180px;
+	opacity: 0;
 }
 
 .card_wrap {

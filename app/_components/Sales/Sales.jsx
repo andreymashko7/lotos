@@ -2,7 +2,10 @@ import s from "./sales.module.css";
 
 const Sales = () => {
 	return (
-		<section classname={s.sales}>
+		<section
+			className={s.sales}
+			id="sales"
+		>
 			<div className={s.sales_wrap}>
 				<div className={s.left_side}>
 					<p className={s.sales_text}>

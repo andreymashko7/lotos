@@ -1,0 +1,38 @@
+.modal {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.modal.active {
+	animation: modalOpen 1s forwards;
+	pointer-events: all;
+}
+
+.modal_content {
+	padding: 20px;
+	border-radius: 12px;
+	background-color: white;
+}
+
+.modal_content.active {
+	animation: modalOpen 1s forwards;
+}
+
+@keyframes modalOpen {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

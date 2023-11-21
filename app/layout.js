@@ -17,7 +17,7 @@ export const open_sans = Open_Sans({
 });
 
 export const raleway = Raleway({
-	weight: ["400", "600"],
+	weight: ["400", "500", "600"],
 	subsets: ["latin"],
 	variable: "--font-raleway",
 	display: "swap"
@@ -27,13 +27,16 @@ export const metadata = {
 	description: "custom-made furniture from tm lotus"
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout(props) {
 	return (
 		<html
 			lang="rus"
 			className={`${ubuntu.variable} ${open_sans.variable} ${raleway.variable}`}
 		>
-			<body>{children}</body>
+			<body>
+				{props.children}
+				{props.auth}
+			</body>
 		</html>
 	);
 }

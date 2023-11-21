@@ -3,7 +3,10 @@ import s from "./feedback.module.css";
 
 const Feedback = () => {
 	return (
-		<section className={s.feedback}>
+		<section
+			id="reviews"
+			className={s.feedback}
+		>
 			<div className={s.bg}>
 				<div className={s.container}>
 					<div className={`titleWrap ${s.title_position}`}>

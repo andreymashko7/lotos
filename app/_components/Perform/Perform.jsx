@@ -1,16 +1,45 @@
+"use client";
+
+import { useLayoutEffect } from "react";
 import s from "./perform.module.css";
 import { FaPhoneVolume, FaTruck, FaWrench, FaThumbsUp } from "react-icons/fa6";
 import { GiNothingToSay } from "react-icons/gi";
 import { IoTime } from "react-icons/io5";
 
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 const Perform = () => {
+	useLayoutEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+		gsap.fromTo(
+			"#list > li",
+			{ opacity: 0, y: -50 },
+			{
+				opacity: 1,
+				y: 0,
+				stagger: 0.2,
+				duration: 1,
+				scrollTrigger: {
+					trigger: "#list",
+					start: "top 75%",
+					end: "bottom 25%",
+					toggleActions: "play complete none reset"
+				}
+			}
+		);
+	}, []);
+
 	return (
 		<section className={`container ${s.perform}`}>
 			<div className="titleWrap">
 				<h3 className="title">Как мы выполняем проект</h3>
 				<span className="yellow_line"></span>
 			</div>
-			<ul className={s.list}>
+			<ul
+				className={s.list}
+				id="list"
+			>
 				<li className={s.item}>
 					<div className={s.card_wrap}>
 						<div className={s.box}>

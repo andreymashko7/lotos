@@ -5,7 +5,10 @@ import data from "../../_data/gallery.json";
 
 const Gallery = () => {
 	return (
-		<section className={`container ${s.gallery} `}>
+		<section
+			id="catalog"
+			className={`container ${s.gallery} `}
+		>
 			<div className="titleWrap">
 				<h2 className="title">Какие работы мы выполняем</h2>
 				<span className="yellow_line"></span>

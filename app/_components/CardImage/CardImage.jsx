@@ -1,5 +1,10 @@
+"use client";
 import Image from "next/image";
 import s from "./cardImage.module.css";
+
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const CardImage = ({ data, attr }) => {
 	return (
@@ -14,12 +19,13 @@ const CardImage = ({ data, attr }) => {
 						<li
 							key={el.photo}
 							className={
-								attr === "home" ? `${s.gallery_item}` : `${s.item_commercial}`
+								attr === "home" ? `${s.gallery_item}` : `${s.item_commercial} `
 							}
 						>
 							<a
 								href="#"
 								className={s.gallery_link}
+								id="link"
 							>
 								<Image
 									src={el.photo}

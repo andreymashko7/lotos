@@ -98,6 +98,10 @@ h6 {
 	/* #EEC42D */
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: var(--font-open_sans), sans-serif;
 	font-size: var(--fs-md);
@@ -145,3 +149,22 @@ body {
 	margin-top: 15px;
 	background-image: linear-gradient(180deg, #eec42d, #eec42d);
 }
+
+/*  Swiper lib */
+
+div.swiper-button-prev,    /*for swiper arrows*/
+div.swiper-button-next {
+	color: #eec42d;
+}
+
+/*for swiper bullets*/
+/* span.swiper-pagination-bullet {
+	background-color: #fff;
+} */
+
+/* .swiper-custom-pagination {
+}
+
+html {
+	scroll-behavior: smooth;
+} */

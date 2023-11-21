@@ -10,7 +10,7 @@
 
 .bg_wrap {
 	position: relative;
-	height: 100vh;
+	height: 695px;
 }
 
 /* ---------        Header Links    ----------------*/
@@ -29,9 +29,6 @@
 	column-gap: 30px;
 	color: var(--colors-links);
 	font-family: var(--font-ubuntu);
-}
-
-.nav_item {
 }
 
 .nav_item a {
@@ -75,11 +72,16 @@
 }
 
 .title {
-	margin-bottom: 90px;
-	font-size: 65px;
+	margin-bottom: 120px;
+	font-size: 70px;
 	line-height: 44px;
-	color: #151515;
+	/* color: #151515; */
+	font-weight: 500;
 	font-family: var(--font-raleway);
+
+	color: rgba(0, 0, 0, 0.6);
+	text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+	opacity: 0;
 }
 
 .subTitle {
@@ -95,15 +97,16 @@
 /* --------------- Button Modal ----------------------*/
 
 .hero_btn {
+	align-self: center;
 	padding: 15px 40px;
 	border-radius: 2px;
-	/* background-image: -webkit-linear-gradient(270deg, #eec42d, #eec42d); */
 	background-image: linear-gradient(180deg, #eec42d, #eec42d);
 	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
 	color: #2e2d2d;
 	font-size: var(--fs-md);
 	text-align: center;
 	letter-spacing: 0.5px;
+	opacity: 0;
 }
 
 .hero_btn:hover {

@@ -34,4 +34,18 @@
 	color: #ccc;
 }
 
+.swiper.swiper-button-prev {
+	color: red;
+}
+
 /*   -------Pagination ------------ */
+
+.swiper .swiper-pagination-bullet-active {
+	background: #f00;
+}
+
+.wrapper-start {
+	display: block;
+	width: 500px;
+	background-color: red;
+}

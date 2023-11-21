@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import s from "./materials.module.css";
 import ldsp from "../../../public/ldsp.jpg";
@@ -7,7 +8,10 @@ import brands from "../../../public/proizvoditeli.png";
 
 const Materials = () => {
 	return (
-		<section className={`container ${s.materials}`}>
+		<section
+			id="materials"
+			className={`container ${s.materials}`}
+		>
 			<div className={s.materials_wrap}>
 				<div className={s.left_side}>
 					<div className="titleWrap">

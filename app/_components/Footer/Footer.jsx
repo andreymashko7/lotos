@@ -8,7 +8,10 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className={s.footer}>
+		<footer
+			id="contacts"
+			className={s.footer}
+		>
 			<div className={`container ${s.footer_wrap}`}>
 				<div>
 					<address className={s.contacts}>
